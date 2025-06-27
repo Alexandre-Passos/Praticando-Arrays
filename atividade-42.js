@@ -11,8 +11,8 @@ Exiba uma mensagem informando se o livro foi encontrado ou não.
 const livros = ['Dom Casmurro', 'O Cortiço', 'Capitães da Areia', 'Iracema'];
 const livroProcurado = 'O Cortiço';
 
-if (livros.indexOf(livroProcurado) !== -1) {
-    console.log(`O livro "${livroProcurado}" está disponível.`);
+if (livros.includes(livroProcurado)) {
+    console.log('O livro está disponivel')
 } else {
-    console.log(`O livro "${livroProcurado}" não foi encontrado.`);
+    console.log('Livro indisponivel');
 }
